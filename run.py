@@ -25,6 +25,7 @@ class TeatUser(unittest.TestCase):#create subclass to inherit from unittest.Test
         self.new_account.save_account()
         self.assertEquals(len(Account.account_list), 1)
     
+    
 
 
     
@@ -35,4 +36,4 @@ class TeatUser(unittest.TestCase):#create subclass to inherit from unittest.Test
 
 
 if __name__ == '__main__':
-    unittest.mail())
+    unittest.main()
