@@ -28,13 +28,13 @@ class TeatUser(unittest.TestCase):#create subclass to inherit from unittest.Test
     def tearDown(self):
         Account.account_list = []
     
-    def test_multiple_save(self):
+    def test_multiple_saves(self):
         self.new_credentials.save_details()
         test_credential = User("Kraft" "facebook", "123456py")
         test_credential.save_details()
         self.assertEqual(len(User.User_list), 2)
 
-    def test_multiple_save(self):
+    def test_multiple_saves(self):
         self.new_account.save_account()
         test_account = Account("Femi", "1234kly")
         test_account.test_save_account()
@@ -43,9 +43,33 @@ class TeatUser(unittest.TestCase):#create subclass to inherit from unittest.Test
     def test_delete_credentials(self):
         self.new_credentials.save_details()
         test_credential = User("Kraft","wichat","wiwichch12")
-        test_credentials.delete_credential()
+        test_credentials.save_cetails()
+        self.new_accounts.test_delete_credential()
         self.assertEquals(len(User.User_list), 1)
+
+    def test_delete_account(self):
+        self.new_account.save_account()
+        test_account = Account("Noah", "yu67yu")
+        test_account.save_account()
+        self.new_account.test_delete_acount()
+        self.assertEquals(len(Account.account_list), 1)
+
+    def test_find_credentials_by_account(self):
+        self.new_credentials.save_details()
+        test_credentials = User("Joy", "g-mail","hj12345")
+        test_credentials.save_details()
+        found_account = User.find_by_account("g-mail")
+        self.assertEqual(found_account.password, test_credentials.passwords)
         
+    def test_credentials_exists(self):
+        self.new_credentials.save_details()
+        test_credentials = User("Kevin", "Pintrest", "pin@123")
+        test_credentials.save_details()
+        credentials_exists = User.delete_credentials_exists("pintrest")
+        self.assertTrue(credentials_exists)
+
+    def test_display_credentials(self)
+    
 
     
 
