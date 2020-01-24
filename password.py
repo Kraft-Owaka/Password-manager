@@ -16,6 +16,7 @@ class User(object):
 
     def delete_credential(self):
         User.User_list.remove(self)
+ 
 
     
 
