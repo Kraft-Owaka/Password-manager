@@ -68,9 +68,14 @@ class TeatUser(unittest.TestCase):#create subclass to inherit from unittest.Test
         credentials_exists = User.delete_credentials_exists("pintrest")
         self.assertTrue(credentials_exists)
 
-    def test_display_credentials(self)
-    
+    def test_display_credentials(self):
+        self.assertEqual(User.display_credentials(), User.User_list)
 
+
+    def test_copy_passwords(self):
+        self.new_credentials.save_details()
+        User.copy_passwords("pintrest")
+        self.assertEqual(self.new_credentials.passwords, pyperclip.paste())
     
 
 
