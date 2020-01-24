@@ -21,7 +21,9 @@ class TeatUser(unittest.TestCase):#create subclass to inherit from unittest.Test
         self.assertEquals(len(User.User_list), 1)
 
 
-    def
+    def test_save_account(self):
+        self.new_account.save_account()
+        self.assertEquals(len(Account.account_list), 1)
     
 
 
