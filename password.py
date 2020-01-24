@@ -21,7 +21,19 @@ class User(object):
 
     
 
-    
+    class Account(object):
+        account_list = []
+        def __init__(self, name, passrights)
+            self.name = NameError
+            self.passrights = passrights
+
+        def save_account(self):
+            Account.account_list.append(self)
+
+        def delete_account(self):
+            Account.account_list.remove(self)
+
+
 
     
 
