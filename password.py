@@ -11,11 +11,13 @@ class User(object):
         self.account = account
 
 
-    def save_credential(self):
+    def save_details(self):
         User.User_list.append(self)
 
     def delete_credential(self):
         User.User_list.remove(self)
+
+    
 
     
 
