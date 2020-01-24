@@ -26,8 +26,14 @@ class TeatUser(unittest.TestCase):#create subclass to inherit from unittest.Test
         self.assertEquals(len(Account.account_list), 1)
     
     def tearDown(self):
-        User.User_list = []
         Account.account_list = []
+    
+    def test_multiple_save(self):
+        self.new_credentials.save_details()
+        test_credential = User("Kraft" "facebook", "123456py")
+        test_credential.save_details()
+        self.assertEqual(len(User.User_list), 2)
+
     
 
 
