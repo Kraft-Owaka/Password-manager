@@ -34,3 +34,13 @@ def credential_exists(string):
 
 def find_by_account(string):
     return User.find_by_account(string)
+
+def mail():
+    print("Hello and to password locker, what is your namw?")
+    user_name = input()
+
+    print(f"Hi {user_name}. What would you like to do?")
+    print('\n')
+
+    while True:
+        print("Select s=a short code : cc - create a new credentials")
