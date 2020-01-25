@@ -5,8 +5,8 @@ A users has the ability of creating, savingand  and coping their passwords to a 
 Owaka Kraft.
 
 
-### [! Read me image and the appliationimage](link-to-image)]
-<img src ="./img/pass.png">
+###  Read me image and the appliationimage](link-to-image)
+<img src =".Document/2Angular-core/Password-manager/img/pass.png">
 <img src ="./img/two.png">
 <img src ="./img/three.png">
 <img src ="./img/four.png">
