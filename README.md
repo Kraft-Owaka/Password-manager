@@ -4,6 +4,14 @@ A users has the ability of creating, savingand  and coping their passwords to a 
 # Author
 Owaka Kraft.
 
+
+### [! Read me image and the appliationimage](link-to-image)]
+<img src ="./img/pass.png">
+<img src ="./img/two.png">
+<img src ="./img/three.png">
+<img src ="./img/four.png">
+
+
 ## Target
 This project serves anyone who would like to have a place to safelly store their passwords so that they can stay safe.
 

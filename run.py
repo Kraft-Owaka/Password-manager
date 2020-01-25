@@ -73,7 +73,7 @@ def main():
             username = input()
             print("enter the account")
             account = input()
-            print("how would you wish to create your password, if generate then select 'G' else select 'C' ?")
+            print("how would you wish to create your password, if generate then select 'g' else select 'c' ?")
             unit = input().upper()
             if unit == 'G':
                 print("input your password length required ")
@@ -81,7 +81,7 @@ def main():
                 length = int(generated)
                 char = 'abcdefghijklmnopqrstuvwxyz1234567890'
                 password = ''
-                for c in range(length):
+                for C in range(length):
                     password += random.choice(char)
                 print('\n')
                 print(f"the password generated is: {password}")
