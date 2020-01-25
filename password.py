@@ -3,7 +3,7 @@ import random
 import pyperclip
 
 class User(object):
-    User_list=[]
+    User_list = []
 
     def __init__(self, username, account, passwords):
         self.username = username
@@ -21,7 +21,7 @@ class User(object):
     code to make the tests pass
     """
 @classmethod
-def find_by_account(cls, string):
+def find_account(cls, string):
     for credentials in cls.User_list:
         if credentials.account == string:
             return credentials
@@ -43,34 +43,17 @@ def copy_passwords(cls, string):
 class Account(object):
     account_list = []
 
-    def __init__(self, name, passrights):
+    def __init__(self, name, passright):
         self.name = name
-        self.passrights = passrights
+        self.passrights = passright
     def save_account(self):
         Account.account_list.append(self)
 
     def delete_account(self):
         Account.account_list.remove(self)
 
-     
 
     
-
-    
-
-    class Account(object):
-        account_list = []
-        def __init__(self, name, passrights)
-            self.name = NameError
-            self.passrights = passrights
-
-        def save_account(self):
-            Account.account_list.append(self)
-
-        def delete_account(self):
-            Account.account_list.remove(self)
-
-
 
     
 

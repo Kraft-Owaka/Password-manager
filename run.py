@@ -35,7 +35,7 @@ def credential_exists(string):
 def find_by_account(string):
     return User.find_by_account(string)
 
-def mail():
+def main():
     print("Hello and to password locker, what is your namw?")
     user_name = input()
 
@@ -52,7 +52,7 @@ def mail():
             username = input()
             print("enter the account")
             account = input()
-            print("To create or generate your passwerd?, if generate then select 'G' else select 'C' ?")
+            print("To create or generate your password?, if generate then select 'G' else select 'C' ?")
             unit = input().upper()
             if unit == 'G':
                 print("Please, inputyour password")
@@ -128,4 +128,14 @@ def mail():
                     print('_' * 20)
 
                 else: 
-                    print ()
+                    print ("credentials doesnt exist")
+
+            elif short_code == 'ex':
+                print("Till next time...")
+
+                break
+            else:
+                print("Please uses the coded povided above")
+
+if __name__ == '__main__':
+    main()

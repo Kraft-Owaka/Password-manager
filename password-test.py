@@ -1,9 +1,10 @@
-import unittest
+import unittest # Importing the unittest module
 from password import User 
-import pyperclip
+import pyperclip ('The text to be copied to the clipboard.')
+# import pyperclip.paste()
 from password import Account
 
-class TeatUser(unittest.TestCase):#create subclass to inherit from unittest.TestCase
+class TestUser(unittest.TestCase):#create subclass to inherit from unittest.TestCase
 
     def setup(self):
         self.new_credentials = User("Owaka", "twitter", "pass@987ko")# create contact object
@@ -12,9 +13,9 @@ class TeatUser(unittest.TestCase):#create subclass to inherit from unittest.Test
     def test_init(self):
         self.assertEqual(self.new_credentials.username, "Owaka")
         self.assertEqual(self.new_credentials.account, "twitter")
-        self.assertEqual(self.new_credentials.password, "pass@987ko")
+        self.assertEqual(self.new_credentials.passwords, "pa@5643")
         self.assertEqual(self.new_account.name, "Kraft")
-        self.assertEqual(self.new_account.passrights, "qwe12pr")
+        self.assertEqual(self.new_account.passright, "qwe12pr")
 
     def test_save_details(self):
         self.new_credentials.save_details()
@@ -26,11 +27,12 @@ class TeatUser(unittest.TestCase):#create subclass to inherit from unittest.Test
         self.assertEquals(len(Account.account_list), 1)
     
     def tearDown(self):
+        User.User_list = []
         Account.account_list = []
     
     def test_multiple_saves(self):
         self.new_credentials.save_details()
-        test_credential = User("Kraft" "facebook", "123456py")
+        test_credential = User("Kraft" "facebook", "456py")
         test_credential.save_details()
         self.assertEqual(len(User.User_list), 2)
 
@@ -43,8 +45,8 @@ class TeatUser(unittest.TestCase):#create subclass to inherit from unittest.Test
     def test_delete_credentials(self):
         self.new_credentials.save_details()
         test_credential = User("Kraft","wichat","wiwichch12")
-        test_credentials.save_cetails()
-        self.new_accounts.test_delete_credential()
+        test_credentials.save_details()
+        self.new_credentials.delete_credential()
         self.assertEquals(len(User.User_list), 1)
 
     def test_delete_account(self):
