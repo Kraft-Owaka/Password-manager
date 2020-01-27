@@ -7,9 +7,9 @@ Owaka Kraft.
 
 ###  Read me image and the appliationimage](link-to-image)
 ![this shows my landing page](img/1.png)
-![this shows my landing page](img/1.png)
-![this shows my landing page](img/1.png)
-![this shows my landing page](img/1.png)
+![this shows my landing page](img/run.png)
+![this shows my landing page](img/test.png)
+![this shows my landing page](img/Readme.png)
 
 
 
