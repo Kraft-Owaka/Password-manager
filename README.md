@@ -6,10 +6,7 @@ Owaka Kraft.
 
 
 ###  Read me image and the appliationimage](link-to-image)
-<img src ="./img/pass.png">
-<img src ="./img/two.png">
-<img src ="./img/three.png">
-<img src ="./img/four.png">
+![this shows my landing page](src/img/1.png)
 
 
 ## Target
