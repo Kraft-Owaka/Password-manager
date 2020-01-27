@@ -6,7 +6,7 @@ Owaka Kraft.
 
 
 ###  Read me image and the appliationimage](link-to-image)
-![this shows my landing page](src/img/1.png)
+![this shows my landing page](img/1.png)
 
 
 ## Target
